@@ -1,0 +1,24 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "06:14:36  01/03/2020"
+* "netlist" "c:\users\mahmut kocaman\desktop\analog\rapor\codes\psrr.sp"
+* "runtitle" "*****Analog Circuit Design Essentials*****"
+* time = 0
+* temperature = 25
+* alter = 0
+*** BEGIN: Saved Operating Point ***
+.nodeset
++ 0 = 0
++ 1 = 0
++ 2 = 0.0270608
++ 3 = 0.0270608
++ 4 = 0.0541217
++ 5 = 0.0541217
++ 6 = 0.516257
++ 7 = 0.0541387
++ 8 = 0.0541387
++ 9 = 0.258129
++ 10 = 0
++ 11 = 0.32174
+*** END: Saved Operating Point ***

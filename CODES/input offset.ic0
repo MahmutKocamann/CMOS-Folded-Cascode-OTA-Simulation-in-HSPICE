@@ -1,0 +1,25 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "07:27:01  01/03/2020"
+* "netlist" "c:\users\mahmut kocaman\desktop\analog\rapor\codes\input offset.sp"
+* "runtitle" "*****Analog Circuit Design Essentials*****"
+* time = 0
+* temperature = 25
+*** BEGIN: Saved Operating Point ***
+.option
++ gmindc= 1e-012
+.nodeset
++ 1 = 0.0000000000
++ 2 = 585.0910401136u
++ 3 = 33.1239510816m
++ 4 = 200.7676172743m
++ 5 = 72.8884196350m
++ 6 = 824.9082874294m
++ 7 = 201.0972188676m
++ 8 = 72.8906532062m
++ 9 = 412.4541437058m
++ 10 = 0.0000000000
++ 11 = 560.6709282369m
++ 12 = 0.0000000000
+*** END: Saved Operating Point ***

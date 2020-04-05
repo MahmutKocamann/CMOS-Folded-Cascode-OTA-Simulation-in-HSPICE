@@ -1,0 +1,4 @@
+pf:read PF:1 v(5)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0

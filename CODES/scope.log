@@ -1,0 +1,9 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Mahmut Kocaman/Desktop/ANALOG/RAPOR/CODES/input offset.tr0}} 1 openonly
+# PF:1
+pf:read PF:1 v(5)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0

@@ -1,0 +1,314 @@
+************************************************************************
+HSPICE RF -- A-2008.03 (Feb 26 2008)
+Copyright (C) 2008 Synopsys,Inc. All rights reserved.
+This software and the associated documentation are confidential and
+proprietary to Synopsys, Inc. Your use or disclosure of this software
+is subject to the terms and conditions of a written license agreement
+between you, or your company, and Synopsys, Inc.
+************************************************************************
+
+hspicerf 32-bit version A-2008.03 (Feb 26 2008 14:57:57)
+
+machine info: Professional Server 4.0 (Build 9200) 586 on DESKTOP-QD3SNEE
+
+current time: 05:51:06 01/03/2020
+
+command line: hspicerf c:\users\mahmut
+kocaman\desktop\analog\rapor\codes\cmrr.sp
+
+Total number of lines parsed: 315
+
+Resource Usage for Parsing
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.02 Mb  |
+|------------------------|
+
+Source Files
+----------------------------------------------------------------
+| "c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp" |
+| "130nm.txt"                                                  |
+|--------------------------------------------------------------|
+
+Options
+------------------
+| Option | Value |
+|--------+-------|
+| POST   | 1     |
+|----------------|
+
+8 unique instance models are loaded.
+
+Resource Usage for Load Netlist Data
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Netlist Statistics
+---------------------
+| Type      | Count |
+|-----------+-------|
+| nmos      | 6     |
+| pmos      | 6     |
+| capacitor | 1     |
+| isrc      | 2     |
+| vsrc      | 1     |
+|-------------------|
+
+Summary of Possible Problems in Netlist
+-------------------------------------
+| Negative resistor             | 0 |
+| Negative capacitor            | 0 |
+| Negative inductor             | 0 |
+| Unconnected node              | 0 |
+| Dangling terminal             | 0 |
+| Non-rail bulk terminal        | 8 |
+| Floating MOS gate             | 0 |
+| Floating MOS bulk             | 0 |
+| Floating BJT substrate        | 0 |
+| Floating controlled input     | 0 |
+| Floating current source nodes | 3 |
+| Source loop                   | 0 |
+|-----------------------------------|
+
+Warning: 8 non-rail bulk terminal.
+This may significantly slow down the simulation. Usually, MOS bulk is tied to
+the rail. This may be due to a connectivity error, or it may be due to
+internal or non-ideal power supply.
+
+The following elements have a non-rail bulk.
+------------------------------------------------------------------------------------------------------------------
+| Location                                                        | Subckt    | Instance | Net/node | Definition |
+|-----------------------------------------------------------------+-----------+----------+----------+------------|
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:20) | top level | "M11"    | "9"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:18) | top level | "M9"     | "11"     |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:16) | top level | "M7"     | "10"     |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:15) | top level | "M6"     | "8"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:14) | top level | "M5"     | "7"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:13) | top level | "M4"     | "2"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:12) | top level | "M3"     | "3"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:10) | top level | "M1"     | "1"      |            |
+|----------------------------------------------------------------------------------------------------------------|
+
+Warning: 3 Floating current source nodes which has no DC path to ground.
+both ports of current source (I,G(vccs),F(cccs)) should have a DC-path to
+ground.
+
+The following current source have node(s) with no DC path.
+------------------------------------------------------------------------------------------------------------------
+| Location                                                        | Subckt    | Instance | Net/node | Definition |
+|-----------------------------------------------------------------+-----------+----------+----------+------------|
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:28) | top level | "IBIAS2" | "6"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:27) | top level | "IBIAS1" | "1"      |            |
+| (c:\users\mahmut kocaman\desktop\analog\rapor\codes\cmrr.sp:27) | top level | "IBIAS1" | "11"     |            |
+|----------------------------------------------------------------------------------------------------------------|
+
+Resource Usage for Netlist Check
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Number of nodes: 14
+
+Total number of nodes (including internal nodes): 14
+
+Resource Usage for Netlist Data Compression
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Simulation
+
+Operating Point Status time=0
+--------------------
+| Node | Voltage   |
+|------+-----------|
+| 1    | -1.85934  |
+| 2    | -1.17515  |
+| 3    | -1.17515  |
+| 4    | -0.490951 |
+| 5    | -0.490951 |
+| 6    | 0.426295  |
+| 7    | -0.362908 |
+| 8    | -0.362908 |
+| 9    | 0.0571661 |
+| 10   | -0.311963 |
+| 11   | 0.562908  |
+| 12   | 0.1       |
+|------------------|
+
+
+--------------------------
+| Element | VIN+         |
+|---------+--------------|
+| volts   | 1.0000e-001  |
+| current | -8.9251e-021 |
+| power   | 8.9251e-022  |
+|------------------------|
+
+
+--------------------------------------------------------------------------
+| Element    | M2           | M6           | M4           | M1           |
+|------------+--------------+--------------+--------------+--------------|
+| Model Name | PFET         | NFET         | PFET         | PFET         |
+| region     | Cutoff       | Linear       | Cutoff       | Cutoff       |
+| id         | 7.2753e-008  | -5.0000e-005 | 7.2753e-008  | 7.2753e-008  |
+| ibs        | -0.0000e+000 | 0.0000e+000  | -0.0000e+000 | -0.0000e+000 |
+| ibd        | -4.9927e-005 | 2.1837e-015  | -4.9927e-005 | -4.9927e-005 |
+| vgs        | 6.8420e-001  | 7.8920e-001  | 6.8420e-001  | 6.8420e-001  |
+| vds        | 6.8420e-001  | -1.2804e-001 | 6.8420e-001  | 6.8420e-001  |
+| vbs        | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  |
+| vth        | -1.6810e-001 | 2.2802e-001  | -1.6810e-001 | -1.6810e-001 |
+| vdsat      | -3.3267e-002 | 5.8842e-001  | -3.3267e-002 | -3.3267e-002 |
+| beta       | 8.0545e-003  | 6.7242e-004  | 8.0545e-003  | 8.0545e-003  |
+| gam eff    | 4.5102e-001  | 4.0653e-001  | 4.5102e-001  | 4.5102e-001  |
+| gm         | 2.1058e-006  | 6.0448e-005  | 2.1058e-006  | 2.1058e-006  |
+| gds        | 3.3403e-009  | 3.4061e-004  | 3.3403e-009  | 3.3403e-009  |
+| gmb        | 2.0360e-007  | 9.4271e-006  | 2.0360e-007  | 2.0360e-007  |
+| cdtot      | 1.1458e-013  | 2.5150e-014  | 1.1458e-013  | 1.1458e-013  |
+| cgtot      | 2.8940e-013  | 2.7148e-014  | 2.8940e-013  | 2.8940e-013  |
+| cstot      | 8.7967e-014  | 2.6765e-014  | 8.7967e-014  | 8.7967e-014  |
+| cbtot      | 2.2347e-013  | 5.1739e-015  | 2.2347e-013  | 2.2347e-013  |
+| cgs        | 2.4800e-014  | 1.1704e-014  | 2.4800e-014  | 2.4800e-014  |
+| cgd        | 1.9194e-013  | 1.5150e-014  | 1.9194e-013  | 1.9194e-013  |
+|------------------------------------------------------------------------|
+
+
+--------------------------------------------------------------------------
+| Element    | M8           | M11          | M5           | M3           |
+|------------+--------------+--------------+--------------+--------------|
+| Model Name | NFET         | NFET         | NFET         | PFET         |
+| region     | Linear       | Saturation   | Linear       | Cutoff       |
+| id         | -2.5000e-005 | 5.0000e-005  | -5.0000e-005 | 7.2753e-008  |
+| ibs        | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  | -0.0000e+000 |
+| ibd        | 5.4417e-016  | -1.9169e-016 | 2.1837e-015  | -4.9927e-005 |
+| vgs        | 3.6913e-001  | 3.6913e-001  | 7.8920e-001  | 6.8420e-001  |
+| vds        | -5.0945e-002 | 3.6913e-001  | -1.2804e-001 | 6.8420e-001  |
+| vbs        | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  |
+| vth        | 2.3312e-001  | 2.3880e-001  | 2.2802e-001  | -1.6810e-001 |
+| vdsat      | 1.9251e-001  | 1.4916e-001  | 5.8842e-001  | -3.3267e-002 |
+| beta       | 3.2807e-003  | 4.9998e-003  | 6.7242e-004  | 8.0545e-003  |
+| gam eff    | 4.0835e-001  | 4.1044e-001  | 4.0653e-001  | 4.5102e-001  |
+| gm         | 1.4728e-004  | 5.9810e-004  | 6.0448e-005  | 2.1058e-006  |
+| gds        | 4.1189e-004  | 7.7290e-006  | 3.4061e-004  | 3.3403e-009  |
+| gmb        | 1.9635e-005  | 8.0242e-005  | 9.4271e-006  | 2.0360e-007  |
+| cdtot      | 8.8315e-014  | 9.0148e-015  | 2.5150e-014  | 1.1458e-013  |
+| cgtot      | 9.7264e-014  | 1.1573e-013  | 2.7148e-014  | 2.8940e-013  |
+| cstot      | 7.9216e-014  | 1.1499e-013  | 2.6765e-014  | 8.7967e-014  |
+| cbtot      | 2.2757e-014  | 3.2544e-014  | 5.1739e-015  | 2.2347e-013  |
+| cgs        | 3.4858e-014  | 1.0392e-013  | 1.1704e-014  | 2.4800e-014  |
+| cgd        | 5.9792e-014  | 3.6896e-015  | 1.5150e-014  | 1.9194e-013  |
+|------------------------------------------------------------------------|
+
+
+--------------------------------------------------------------------------
+| Element    | M12          | M10          | M7           | M9           |
+|------------+--------------+--------------+--------------+--------------|
+| Model Name | NFET         | PFET         | NFET         | PFET         |
+| region     | Saturation   | Cutoff       | Linear       | Cutoff       |
+| id         | 5.0000e-005  | -2.5000e-005 | -2.5000e-005 | -2.5000e-005 |
+| ibs        | 0.0000e+000  | -0.0000e+000 | 0.0000e+000  | -0.0000e+000 |
+| ibd        | -1.9169e-016 | 3.3068e-017  | 5.4417e-016  | 3.3068e-017  |
+| vgs        | 3.6913e-001  | -4.6291e-001 | 3.6913e-001  | -4.6291e-001 |
+| vds        | 3.6913e-001  | -9.2582e-001 | -5.0945e-002 | -9.2582e-001 |
+| vbs        | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  |
+| vth        | 2.3880e-001  | -2.6439e-001 | 2.3312e-001  | -2.6439e-001 |
+| vdsat      | 1.4916e-001  | -1.8434e-001 | 1.9251e-001  | -1.8434e-001 |
+| beta       | 4.9998e-003  | 1.3492e-003  | 3.2807e-003  | 1.3492e-003  |
+| gam eff    | 4.1044e-001  | 4.6288e-001  | 4.0835e-001  | 4.6288e-001  |
+| gm         | 5.9810e-004  | 2.2052e-004  | 1.4728e-004  | 2.2052e-004  |
+| gds        | 7.7290e-006  | 8.7917e-007  | 4.1189e-004  | 8.7917e-007  |
+| gmb        | 8.0242e-005  | 4.6303e-005  | 1.9635e-005  | 4.6303e-005  |
+| cdtot      | 9.0148e-015  | 1.3822e-014  | 8.8315e-014  | 1.3822e-014  |
+| cgtot      | 1.1573e-013  | 1.5930e-013  | 9.7264e-014  | 1.5930e-013  |
+| cstot      | 1.1499e-013  | 1.6546e-013  | 7.9216e-014  | 1.6546e-013  |
+| cbtot      | 3.2544e-014  | 5.2909e-014  | 2.2757e-014  | 5.2909e-014  |
+| cgs        | 1.0392e-013  | 1.4809e-013  | 3.4858e-014  | 1.4809e-013  |
+| cgd        | 3.6896e-015  | 4.9755e-015  | 5.9792e-014  | 4.9755e-015  |
+|------------------------------------------------------------------------|
+
+Resource Usage for Operating Point
+--------------------------
+| CPU Time    | 0.01 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+AC Analysis
+
+0.1% frequency = 1.258925 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+10.0% frequency = 10.000000 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+20.0% frequency = 100.000000 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+30.0% frequency = 794.328235 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+40.0% frequency = 7.943282 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+50.0% frequency = 63.095734 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+60.0% frequency = 630.957344 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+70.0% frequency = 6.309573 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+80.0% frequency = 50.118723 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+90.0% frequency = 501.187234 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+
+
+100.0% frequency = 3.162278 GHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+finished AC analysis (0.09 sec)
+
+
+
+AC analysis time = 0.09 cpu sec
+
+Transient Analysis
+10.0% time = 200.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=11 evl=10 rej=0 mem=0 cpu=0 wall=0 )
+20.0% time = 400.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=12 evl=11 rej=0 mem=0 cpu=0 wall=0 )
+30.0% time = 600.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=12 evl=11 rej=0 mem=0 cpu=0 wall=0 )
+40.0% time = 800.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=12 evl=11 rej=0 mem=0 cpu=0 wall=0 )
+50.0% time = 1000.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=12 evl=11 rej=0 mem=0 cpu=0 wall=0 )
+60.0% time = 1200.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=12 evl=11 rej=0 mem=0 cpu=0 wall=0 )
+70.0% time = 1400.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=13 evl=12 rej=0 mem=0 cpu=0 wall=0 )
+80.0% time = 1600.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=13 evl=12 rej=0 mem=0 cpu=0 wall=0 )
+90.0% time = 1800.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=13 evl=12 rej=0 mem=0 cpu=0 wall=0 )
+100.0% time = 2000.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=13 evl=12 rej=0 mem=0 cpu=0 wall=0 )
+
+solve = 13 eval = 12 reject = 0
+
+Transient time = 0.002 cpu sec, 0 wall sec
+
+Resource Usage for Transient Analysis
+--------------------------
+| CPU Time    | 0.01 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+--- hspicerf done [c:\users\mahmut
+kocaman\desktop\analog\rapor\codes\cmrr.sp] ---
+
+Total time = 0.11 cpu sec
+
+Total memory = 0.00 Mbytes
+
+
+
+
+
+See "cmrr.lis" for results and statistics.

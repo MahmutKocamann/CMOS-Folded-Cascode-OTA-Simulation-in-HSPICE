@@ -1,0 +1,26 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "07:39:22  01/03/2020"
+* "netlist" "c:\users\mahmut kocaman\desktop\analog\rapor\codes\gain and pm.sp"
+* "runtitle" "*****Analog Circuit Design Essentials*****"
+* time = 0
+* temperature = 25
+*** BEGIN: Saved Operating Point ***
+.option
++ gmindc= 1e-012
+.nodeset
++ 1 = 800.0000000000m
++ 2 = 602.0250643199m
++ 3 = 602.0250641967m
++ 4 = 404.0501285788m
++ 5 = 404.0501280802m
++ 6 = 516.2571762756m
++ 7 = 255.9922694727m
++ 8 = 255.9922694630m
++ 9 = 258.1285881226m
++ 10 = 0.0000000000
++ 11 = 821.0028158459m
++ 12 = 500.0000000000m
++ 13 = 500.0000000000m
+*** END: Saved Operating Point ***

@@ -1,0 +1,25 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "07:02:30  01/03/2020"
+* "netlist" "c:\users\mahmut kocaman\desktop\analog\rapor\codes\sr slew rate.sp"
+* "runtitle" "*****Analog Circuit Design Essentials*****"
+* time = 0
+* temperature = 25
+*** BEGIN: Saved Operating Point ***
+.option
++ gmindc= 1e-012
+.nodeset
++ 1 = 800.0000000000m
++ 2 = 640.5971906490m
++ 3 = 641.3755554490m
++ 4 = 481.9759154718m
++ 5 = 46.8836395923m
++ 6 = 516.2571762140m
++ 7 = 301.9003893221m
++ 8 = 44.4148415934m
++ 9 = 258.1285880869m
++ 10 = 0.0000000000
++ 11 = 356.0715321044m
++ 12 = 0.0000000000
+*** END: Saved Operating Point ***
